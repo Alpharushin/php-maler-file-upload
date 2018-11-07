@@ -1,0 +1,141 @@
+@import "utils.css";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic);
+
+body{
+  background-color:#f0f0f0;
+  font-family: 'Open Sans', sans-serif;  
+  padding-top:100px; 
+}
+
+.container{
+    max-width: 32em;
+	margin: 0 auto;
+	padding: 1.2em; 
+}
+        
+/* Базовые стили формы */
+form{
+  margin:0 auto;
+  max-width:95%;
+  box-sizing:border-box;
+  padding:40px;
+  border-radius:5px; 
+  background:RGBA(255,255,255,1);
+  -webkit-box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);        
+  box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);  
+}
+/* Стили полей ввода */
+.textbox{
+  height:50px;
+  width:100%;
+  border-radius:3px;
+  border:rgba(0,0,0,.3) 2px solid;
+  box-sizing:border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size:18px; 
+  padding:10px;
+  margin-bottom:30px;  
+}
+.message:focus,
+.textbox:focus{
+  outline:none;
+   border:rgba(24,149,215,1) 2px solid;
+   color:rgba(24,149,215,1);
+}
+/* Стили текстового поля */
+.message{
+	background: rgba(255, 255, 255, 0.4); 
+    width:100%;
+    height: 120px;
+    border:rgba(0,0,0,.3) 2px solid;
+    box-sizing:border-box;
+    -moz-border-radius: 3px;
+    font-size:18px;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; 
+    display:block;
+    padding:10px;
+    margin-bottom:30px;
+    overflow:hidden;
+}
+/* Базовые стили кнопки */
+.button{
+  height:50px;
+  width:100%;
+  border-radius:3px;
+  border:rgba(0,0,0,.3) 0px solid;
+  box-sizing:border-box;
+  padding:10px;
+  background:#90c843;
+  color:#FFF;
+  font-family: 'Open Sans', sans-serif;  
+  font-weight:400;
+  font-size: 16pt;
+  transition:background .4s;
+  cursor:pointer;
+}
+/* Изменение фона кнопки при наведении */
+.button:hover{
+  background:#80b438;
+}
+
+.example-1 .form-group{
+	padding:1em;margin:1em
+}
+.example-1 input[type=file]{
+	outline:0;
+	opacity:0;
+	pointer-events:none;
+	user-select:none;
+}
+.example-1 .label{
+	width:150px;
+	border:2px dashed grey;
+	border-radius:5px;
+	display:inline-block;
+	padding:1.2em;
+	transition:border 300ms ease;
+	cursor:pointer;
+	text-align:center;
+}
+.example-1 .label i{
+	display:block;
+	font-size:42px;
+	padding-bottom:16px;
+}
+.example-1 .label i,.example-1 .label .title{
+	color:grey;
+	transition:200ms color;
+}
+.example-1 .label:hover{
+	border:2px solid #000;
+}
+.example-1 .label:hover i,.example-1 .label:hover .title{
+	color:#000;
+}
+
+/* Large Devices, Wide Screens - adaptive styles bofore 1200px */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops - adaptive styles bofore 992px */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets - adaptive styles bofore 768px */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones - adaptive styles bofore 480px */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina - adaptive styles bofore 320px */
+@media only screen and (max-width : 320px) {
+
+}
